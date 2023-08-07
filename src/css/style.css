@@ -1,0 +1,65 @@
+.container{
+    width: 500px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+#ItemsList{
+    list-style-type: none;
+    padding: 0;
+}
+.ItemList{
+    border: 1px #ccc solid;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+#todo_time{
+    width: 90px;
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+#todo_text{
+    width: 270px;
+    height: 30px;
+    padding: 0px;
+    border: 1px #000 solid;
+    padding-left: 20px;
+}
+#submit_btn{
+    width: 60px;
+    height: 35px;
+    margin-left: 10px;
+    background: #03a133;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #fff;
+    transition: all ease-in-out 0.2s;
+}
+#submit_btn:hover{
+    box-shadow: 1px 1px 3px #000;
+}
+.list_text{
+    flex: 1;
+    padding: 3px;
+}
+.dlt_btn{
+    font-size: small;
+    margin-left: 5px;
+}
+.todo_time{
+    font-size: medium;
+    margin-left: 5px;
+    padding: 2px;
+    background: #5e5e5e;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px #5e5e5e solid;
+}
