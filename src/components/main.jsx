@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "../css/style.css";
 import AMP3 from '../ringtone.mp3';
+import PoPUp from './popup';
 
 class Main extends Component {
     state = {
@@ -8,7 +9,7 @@ class Main extends Component {
         valu: [],
         num_l: 0,
         dltBtn: `<button class='dlt_btn'>DELETE</button>`,
-        innervelId: setInterval(console.log("Hello"), 10000),
+        innervelId: "",
         notification: "",
     }
 
@@ -69,6 +70,8 @@ class Main extends Component {
                                     new Notification("Your Time is On", {
                                         tag: "Alarm"
                                     })
+                                    // PoP up BoX //
+                                    
                                 }
                             })
                         }
@@ -158,6 +161,7 @@ class Main extends Component {
 
                 </ul>
             </div>
+            <PoPUp id="todo_popup" header="!Todo Alarm!" text="this is a popup"/>
         </React.Fragment>;
     }
 }
