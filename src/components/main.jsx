@@ -12,10 +12,10 @@ class Main extends Component {
         innervelId: "",
         notification: "",
     }
-
+    loadTime = 0;
     main_audio = new Audio(AMP3);
     componentDidMount() {
-        var notification = Notification.requestPermission();
+        var notification =Notification.requestPermission();
         this.setState({notification: notification})
         console.log(document.cookie);
         var all_val = this.getAllCookieValue();
@@ -38,6 +38,16 @@ class Main extends Component {
         })
         this.dltFunc();
         this.timeInnerval();
+        // Click a btn automaticly
+        var err_evd_btn = document.querySelector("#err_evd");
+        err_evd_btn.addEventListener("click",e => {            
+            var reloadTime = setInterval(e => {
+                this.loadTime = 1;
+                console.log(this.loadTime);
+                clearInterval(reloadTime);
+            },3000);
+        })
+        err_evd_btn.click();
     }
     dltFunc() {
         var dltBtns = document.querySelectorAll(".dlt_btn");
@@ -63,7 +73,8 @@ class Main extends Component {
                     var readableTime = `${timeNowHour}:${timeNowMinute}`;
                     var timeList = document.querySelectorAll(".todo_time");
                     timeList.forEach(e => {
-                        if (e.innerHTML === readableTime) {
+                        if (e.innerHTML === readableTime && this.loadTime == 1) {
+                            console.log("Audio playing");
                             this.main_audio.play();
                             this.state.notification.then(perm => {
                                 if (perm === "granted") {
@@ -161,7 +172,8 @@ class Main extends Component {
 
                 </ul>
             </div>
-            <PoPUp id="todo_popup" header="!Todo Alarm!" text="this is a popup"/>
+            <button id="err_evd" style={{display: "none"}}>?</button>
+            {/* <PoPUp id="todo_popup" header="!Todo Alarm!" text="this is a popup"/> */}
         </React.Fragment>;
     }
 }
