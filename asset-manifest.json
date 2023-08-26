@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/hafizlikhon143/BrowserTodoapp.git/static/css/main.f24d88ef.css",
-    "main.js": "/hafizlikhon143/BrowserTodoapp.git/static/js/main.23b37dcc.js",
-    "static/media/ringtone.mp3": "/hafizlikhon143/BrowserTodoapp.git/static/media/ringtone.1d51b84d6a7dd490e9cb.mp3",
-    "index.html": "/hafizlikhon143/BrowserTodoapp.git/index.html",
-    "main.f24d88ef.css.map": "/hafizlikhon143/BrowserTodoapp.git/static/css/main.f24d88ef.css.map",
-    "main.23b37dcc.js.map": "/hafizlikhon143/BrowserTodoapp.git/static/js/main.23b37dcc.js.map"
+    "main.css": "/BrowserTodoapp.git/static/css/main.f24d88ef.css",
+    "main.js": "/BrowserTodoapp.git/static/js/main.8f713c60.js",
+    "static/media/ringtone.mp3": "/BrowserTodoapp.git/static/media/ringtone.1d51b84d6a7dd490e9cb.mp3",
+    "index.html": "/BrowserTodoapp.git/index.html",
+    "main.f24d88ef.css.map": "/BrowserTodoapp.git/static/css/main.f24d88ef.css.map",
+    "main.8f713c60.js.map": "/BrowserTodoapp.git/static/js/main.8f713c60.js.map"
   },
   "entrypoints": [
     "static/css/main.f24d88ef.css",
-    "static/js/main.23b37dcc.js"
+    "static/js/main.8f713c60.js"
   ]
 }
