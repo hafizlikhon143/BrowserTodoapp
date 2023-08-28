@@ -1,16 +1,15 @@
 {
   "name": "todo-list",
   "version": "0.1.0",
-  "homepage": "https://hafizlikhon143.github.io/BrowserTodoapp.git",
+  "homepage": "https://hafizlikhon143.github.io/BrowserTodoapp",
   "repository": {
-    "url": "git+https://github.com/hafizlikhon143/BrowserTodoapp.git"
+    "url": "https://github.com/hafizlikhon143/BrowserTodoapp"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^6.0.0",
     "loader": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "webpack-cli": "^5.1.4"
   }
 }
