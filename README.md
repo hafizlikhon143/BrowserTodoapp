@@ -8,6 +8,13 @@
 
 #Note: This website is a very early development Faze so there is a simple GUI there.
 
+# This app store data in Browser Cach and doesn't reqired outside database
+
+here is a demo of simple UI
+
+![this is a demo for website ui]('demo.png')
+
+
 
 # Getting Started with Create React App
 

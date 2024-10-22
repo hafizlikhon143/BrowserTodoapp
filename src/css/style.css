@@ -27,16 +27,35 @@ body{
 }
 h1{
     text-align: center;
+    
 }
 #ItemsList{
     list-style-type: none;
     padding: 0;
 }
+
 .ItemList{
-    border: 1px #ccc solid;
     padding: 5px;
     display: flex;
     justify-content: center;
+    width: 100%;
+    min-width: 350px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.ItemList > span{
+    margin: auto;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+.ItemList > button{
+    margin: auto;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(173, 8, 8);
+    height: 40px;
+    width: 70px;
+    color: #fff;
 }
 #todo_text{
     width: 270px;
