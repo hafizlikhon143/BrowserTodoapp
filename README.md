@@ -12,7 +12,7 @@
 
 here is a demo of simple UI
 
-![this is a demo for website ui]('demo.png')
+![this is a demo for website ui](demo.png)
 
 
 
