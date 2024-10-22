@@ -21,6 +21,7 @@ class Main extends Component {
         var all_val = this.getAllCookieValue();
         var all_val2 = this.getAllCookieValue2();
         var num_l = 1;
+        if(all_val == undefined){alert("Undifined")};
         all_val.forEach((e, index)=>{
             if (e !== "" && all_val2[index].includes("_time") !== true) {
                 var todoList = document.querySelector("#ItemsList");
@@ -53,6 +54,7 @@ class Main extends Component {
         var dltBtns = document.querySelectorAll(".dlt_btn");
         dltBtns.forEach(dltBtn => {
             dltBtn.addEventListener('click', e => {
+                this.main_audio.pause();
                 const confirmation = window.confirm("Do you want to Delete This todo");
                 if (confirmation == true) {
                     var parElemData = e.target.previousElementSibling.previousElementSibling.dataset.id;
@@ -158,8 +160,8 @@ class Main extends Component {
     }
     render() { 
         return <React.Fragment>
-            <h1>Todo List</h1>
-            <div className="container" style={{margin: "auto", textAlign: 'center'}}>
+            <h1 className='playwrite-gb-s-lg'>Todo List</h1>
+            <div className="container .cedarville-cursive-regular" style={{margin: "auto", textAlign: 'center'}}>
                 Input the text in Input box to add the Item In the Todo List.
             </div>
             <form action="" className="container" id="todoInput" onSubmit={this.todoInput}>

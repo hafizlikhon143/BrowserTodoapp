@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+.playwrite-gb-s-lg {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive!important;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: "Playwrite GB S", cursive;
+    background-image: url("../img/2882447.jpg");    
+    background-size: cover cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-transform: uppercase;
+}
 .container{
-    width: 500px;
-    margin: auto;
+    width: fit-content;
+    height: 50px!important;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     text-align: center;
-}
-body{
-    font-family: sans-serif;
-    text-transform: uppercase;
 }
 #ItemsList{
     list-style-type: none;
@@ -19,29 +38,39 @@ body{
     display: flex;
     justify-content: center;
 }
-#todo_time{
-    width: 90px;
-    margin: 0px 10px;
-    padding: 5px 10px;
-}
 #todo_text{
     width: 270px;
-    height: 30px;
+    height: 50px;
     padding: 0px;
-    border: 1px #000 solid;
     padding-left: 20px;
+    outline: none;
+    border-radius: 25px;
+    border: 0px;
+    border-radius: 25px 0px 0px 25px;
+    border-top: 1px #000 solid;
+    border-left: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    font-family: "Playwrite GB S", cursive;
+    margin: auto;
+
 }
 #submit_btn{
     width: 60px;
-    height: 35px;
-    margin-left: 10px;
+    height: 52px;
     background: #03a133;
     border: 0;
-    border-radius: 5px;
     text-transform: uppercase;
     font-weight: bolder;
     color: #fff;
     transition: all ease-in-out 0.2s;
+    border-radius: 0px 25px 25px 0px;
+    border-right: 1px #000 solid;
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    margin: auto;
+    outline: none;
+    transform: translateY(-1px);
+
 }
 #submit_btn:hover{
     box-shadow: 1px 1px 3px #000;
@@ -50,16 +79,18 @@ body{
     flex: 1;
     padding: 3px;
 }
-.dlt_btn{
-    font-size: small;
-    margin-left: 5px;
-}
-.todo_time{
+#todo_time{
+    outline: none;
     font-size: medium;
-    margin-left: 5px;
-    padding: 2px;
-    background: #5e5e5e;
+    margin: auto;
+    padding: 0px;
+    background: #fff;
     color: #fff;
     border-radius: 5px;
-    border: 1px #5e5e5e solid;
+    border-width: 0;
+    height: 50px;
+    border-radius: 0;
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    transform: translateY(-1px);
 }
